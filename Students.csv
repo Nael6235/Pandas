@@ -1,0 +1,17 @@
+import pandas as pd
+
+# creating a DataFrame
+students = {"student ":
+            ['Tayeb', 'Oscar', 'Antoine', 'Anis', 'Victor', 'Souleyman',
+             'Etienne', 'Nael']}
+df = pd.DataFrame(students)
+
+# saving as a CSV file
+df.to_csv('Students.csv', sep ='\t')
+
+# loading the CSV file
+new_df = pd.read_csv('Students.csv')
+
+# displaying the new DataFrame
+print('Data from Students.csv:')
+print(new_df)
